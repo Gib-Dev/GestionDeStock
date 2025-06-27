@@ -56,7 +56,7 @@ Une application moderne de gestion des stocks développée en WPF avec Material 
 ### Installation
 1. **Cloner le repository**
    ```bash
-   git clone [url-du-repo]
+   git clone https://github.com/Gib-Dev/GestionDeStock.git
    cd GESTION-DES-STOCKS
    ```
 
