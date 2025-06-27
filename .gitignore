@@ -1,0 +1,39 @@
+# Build results
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+.vscode/
+
+# Rider
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Entity Framework
+Migrations/
+
+# Logs
+logs/
+*.log
+
+# SQLite database (optionnel, si tu ne veux pas versionner la base locale)
+*.db
+
+# User secrets
+secrets.json
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+
+# Publish output
+publish/ 
