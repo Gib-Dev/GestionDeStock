@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DevAppBureau\\GESTION-DES-STOCKS 1\\GESTION-DES-STOCKS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54AAE7DF-D098-4FA5-80AC-9FAA80EA5B1E}|GESTION-DES-STOCKS\\GESTION-DES-STOCKS.csproj|d:\\devappbureau\\gestion-des-stocks 1\\gestion-des-stocks\\gestion-des-stocks\\productscontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AAE7DF-D098-4FA5-80AC-9FAA80EA5B1E}|GESTION-DES-STOCKS\\GESTION-DES-STOCKS.csproj|solutionrelative:gestion-des-stocks\\productscontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54AAE7DF-D098-4FA5-80AC-9FAA80EA5B1E}|GESTION-DES-STOCKS\\GESTION-DES-STOCKS.csproj|d:\\devappbureau\\gestion-des-stocks 1\\gestion-des-stocks\\gestion-des-stocks\\productscontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54AAE7DF-D098-4FA5-80AC-9FAA80EA5B1E}|GESTION-DES-STOCKS\\GESTION-DES-STOCKS.csproj|solutionrelative:gestion-des-stocks\\productscontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54AAE7DF-D098-4FA5-80AC-9FAA80EA5B1E}|GESTION-DES-STOCKS\\GESTION-DES-STOCKS.csproj|d:\\devappbureau\\gestion-des-stocks 1\\gestion-des-stocks\\gestion-des-stocks\\homepage.xaml.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AAE7DF-D098-4FA5-80AC-9FAA80EA5B1E}|GESTION-DES-STOCKS\\GESTION-DES-STOCKS.csproj|solutionrelative:gestion-des-stocks\\homepage.xaml.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54AAE7DF-D098-4FA5-80AC-9FAA80EA5B1E}|GESTION-DES-STOCKS\\GESTION-DES-STOCKS.csproj|d:\\devappbureau\\gestion-des-stocks 1\\gestion-des-stocks\\gestion-des-stocks\\homepage.xaml.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54AAE7DF-D098-4FA5-80AC-9FAA80EA5B1E}|GESTION-DES-STOCKS\\GESTION-DES-STOCKS.csproj|solutionrelative:gestion-des-stocks\\homepage.xaml.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54AAE7DF-D098-4FA5-80AC-9FAA80EA5B1E}|GESTION-DES-STOCKS\\GESTION-DES-STOCKS.csproj|d:\\devappbureau\\gestion-des-stocks 1\\gestion-des-stocks\\gestion-des-stocks\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54AAE7DF-D098-4FA5-80AC-9FAA80EA5B1E}|GESTION-DES-STOCKS\\GESTION-DES-STOCKS.csproj|solutionrelative:gestion-des-stocks\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54AAE7DF-D098-4FA5-80AC-9FAA80EA5B1E}|GESTION-DES-STOCKS\\GESTION-DES-STOCKS.csproj|d:\\devappbureau\\gestion-des-stocks 1\\gestion-des-stocks\\gestion-des-stocks\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AAE7DF-D098-4FA5-80AC-9FAA80EA5B1E}|GESTION-DES-STOCKS\\GESTION-DES-STOCKS.csproj|solutionrelative:gestion-des-stocks\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductsControl.xaml.cs",
+              "DocumentMoniker": "D:\\DevAppBureau\\GESTION-DES-STOCKS 1\\GESTION-DES-STOCKS\\GESTION-DES-STOCKS\\ProductsControl.xaml.cs",
+              "RelativeDocumentMoniker": "GESTION-DES-STOCKS\\ProductsControl.xaml.cs",
+              "ToolTip": "D:\\DevAppBureau\\GESTION-DES-STOCKS 1\\GESTION-DES-STOCKS\\GESTION-DES-STOCKS\\ProductsControl.xaml.cs",
+              "RelativeToolTip": "GESTION-DES-STOCKS\\ProductsControl.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T08:15:24.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsControl.xaml",
+              "DocumentMoniker": "D:\\DevAppBureau\\GESTION-DES-STOCKS 1\\GESTION-DES-STOCKS\\GESTION-DES-STOCKS\\ProductsControl.xaml",
+              "RelativeDocumentMoniker": "GESTION-DES-STOCKS\\ProductsControl.xaml",
+              "ToolTip": "D:\\DevAppBureau\\GESTION-DES-STOCKS 1\\GESTION-DES-STOCKS\\GESTION-DES-STOCKS\\ProductsControl.xaml",
+              "RelativeToolTip": "GESTION-DES-STOCKS\\ProductsControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-09T08:14:07.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Homepage.xaml.xaml.cs",
+              "DocumentMoniker": "D:\\DevAppBureau\\GESTION-DES-STOCKS 1\\GESTION-DES-STOCKS\\GESTION-DES-STOCKS\\Homepage.xaml.xaml.cs",
+              "RelativeDocumentMoniker": "GESTION-DES-STOCKS\\Homepage.xaml.xaml.cs",
+              "ToolTip": "D:\\DevAppBureau\\GESTION-DES-STOCKS 1\\GESTION-DES-STOCKS\\GESTION-DES-STOCKS\\Homepage.xaml.xaml.cs",
+              "RelativeToolTip": "GESTION-DES-STOCKS\\Homepage.xaml.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvyoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T06:40:09.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Homepage.xaml.xaml",
+              "DocumentMoniker": "D:\\DevAppBureau\\GESTION-DES-STOCKS 1\\GESTION-DES-STOCKS\\GESTION-DES-STOCKS\\Homepage.xaml.xaml",
+              "RelativeDocumentMoniker": "GESTION-DES-STOCKS\\Homepage.xaml.xaml",
+              "ToolTip": "D:\\DevAppBureau\\GESTION-DES-STOCKS 1\\GESTION-DES-STOCKS\\GESTION-DES-STOCKS\\Homepage.xaml.xaml",
+              "RelativeToolTip": "GESTION-DES-STOCKS\\Homepage.xaml.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-09T06:11:52.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\DevAppBureau\\GESTION-DES-STOCKS 1\\GESTION-DES-STOCKS\\GESTION-DES-STOCKS\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "GESTION-DES-STOCKS\\MainWindow.xaml",
+              "ToolTip": "D:\\DevAppBureau\\GESTION-DES-STOCKS 1\\GESTION-DES-STOCKS\\GESTION-DES-STOCKS\\MainWindow.xaml",
+              "RelativeToolTip": "GESTION-DES-STOCKS\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-09T04:51:53.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\DevAppBureau\\GESTION-DES-STOCKS 1\\GESTION-DES-STOCKS\\GESTION-DES-STOCKS\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "GESTION-DES-STOCKS\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\DevAppBureau\\GESTION-DES-STOCKS 1\\GESTION-DES-STOCKS\\GESTION-DES-STOCKS\\MainWindow.xaml.cs",
+              "RelativeToolTip": "GESTION-DES-STOCKS\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvx4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T04:51:47.122Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

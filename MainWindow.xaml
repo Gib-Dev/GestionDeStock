@@ -1,0 +1,151 @@
+﻿<Window x:Class="GESTION_DES_STOCKS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Stock-Ges - Connexion"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        Height="500" Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None">
+    <Grid Background="#5A00D4">
+        <Border Background="White" CornerRadius="15" Padding="0" Margin="20" SnapsToDevicePixels="True">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="15" ShadowDepth="0" Opacity="0.5"/>
+            </Border.Effect>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Partie gauche avec illustration et logo -->
+                <Border CornerRadius="15 0 0 15" Background="#5A00D4">
+                    <Grid>
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <materialDesign:PackIcon Kind="Store" Width="100" Height="100" Foreground="White" Margin="0,0,0,20"/>
+                            <TextBlock Text="Stock-Ges" FontSize="36" Foreground="White" FontWeight="Bold" TextAlignment="Center" Margin="0,10"/>
+                            <TextBlock Text="Bienvenue" FontSize="24" Foreground="White" TextAlignment="Center" Margin="0,5"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <!-- Partie droite : Formulaire de Connexion -->
+                <Border Background="White" Grid.Column="1" CornerRadius="0 15 15 0" Padding="40">
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock Text="Connectez-vous à votre compte" FontSize="20" Foreground="#5A00D4" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,0,60,20"/>
+
+                        <!-- Champ Nom d'utilisateur avec icône et placeholder -->
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,15" VerticalAlignment="Center">
+                            <materialDesign:PackIcon Kind="Account" Width="24" Height="24" Foreground="Gray" Margin="0,5,10,0"/>
+                            <Border Background="#F3F3F3" CornerRadius="5" Width="250" Height="40" BorderBrush="#D3D3D3" BorderThickness="1">
+                                <Grid>
+                                    <TextBox Name="NomUser" Width="230" Background="Transparent" BorderThickness="0" Padding="5,0,0,0"
+                                             VerticalAlignment="Center" FontSize="14" Foreground="Black"/>
+                                    <TextBlock  Foreground="Gray" FontSize="14" IsHitTestVisible="False"
+                                               VerticalAlignment="Center" Margin="5,0,0,0" Padding="5,0,0,0" Opacity="0.5">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Text, ElementName=NomUser}" Value="">
+                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{Binding Text, ElementName=NomUser}" Value="{x:Static sys:String.Empty}">
+                                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+                        </StackPanel>
+
+                        <!-- Champ Mot de passe avec icône et placeholder -->
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,10" VerticalAlignment="Center">
+                            <materialDesign:PackIcon Kind="Lock" Width="24" Height="24" Foreground="Gray" Margin="0,5,10,0"/>
+                            <Border Background="#F3F3F3" CornerRadius="5" Width="250" Height="40" BorderBrush="#D3D3D3" BorderThickness="1">
+                                <Grid>
+                                    <PasswordBox Name="MotDePasse" Width="230" Background="Transparent" BorderThickness="0" Padding="5,0,0,0"
+                                                 VerticalAlignment="Center" FontSize="14" Foreground="Black"/>
+                                    <TextBlock Text="Mot de passe" Foreground="Gray" FontSize="14" IsHitTestVisible="False"
+                                               VerticalAlignment="Center" Margin="5,0,0,0" Padding="5,0,0,0" Opacity="0.5">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Password, ElementName=MotDePasse}" Value="">
+                                                        <Setter Property="Visibility" Value="Visible"/>
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{Binding Password, ElementName=MotDePasse}" Value="{x:Static sys:String.Empty}">
+                                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                </Grid>
+                            </Border>
+                        </StackPanel>
+
+                        <!-- Lien mot de passe oublié -->
+                        <TextBlock HorizontalAlignment="Right" Foreground="#00A8E8" Margin="0,5,0,0">
+                            <Hyperlink Click="ReinitialiserMDP_Click">Mot de passe oublié ?</Hyperlink>
+                        </TextBlock>
+
+                        <!-- Bouton de connexion avec style -->
+                        <Button Content="Se connecter" Width="150" Margin="0,20,0,0" Click="Connecter_Click" HorizontalAlignment="Center" FontSize="16"
+                                Foreground="White" Background="#007EA7" BorderThickness="0" Padding="10,5">
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Cursor" Value="Hand"/>
+                                    <Setter Property="Background" Value="#007EA7"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#FF785A"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+
+                        <!-- Option pour créer un compte -->
+                        <TextBlock HorizontalAlignment="Center" Margin="0,20,0,0" Foreground="Gray">
+                            <Run Text="Vous n'avez pas de compte? "/>
+                            <Hyperlink Click="CreerCompte_Click" Foreground="#00A8E8">Créer un compte</Hyperlink>
+                        </TextBlock>
+
+                        <!-- Message d'erreur -->
+                        <Label x:Name="ErreurMessage" Content="Identifiants incorrects. Veuillez réessayer." Foreground="#FF785A" HorizontalAlignment="Center" Opacity="0" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Border>
+
+        <!-- Bouton de fermeture en haut à droite -->
+        <Button Content="X" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" Click="Fermer_Click"
+                Background="Transparent" BorderBrush="Transparent" Foreground="Gray" FontWeight="Bold" Cursor="Hand">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Grid>
+                                    <Ellipse Fill="Transparent" x:Name="ellipse"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Grid>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="ellipse" Property="Fill" Value="#FFCCCC"/>
+                                        <Setter Property="Foreground" Value="#FF785A"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="GESTION_DES_STOCKS.ProductsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             d:DesignHeight="600" d:DesignWidth="800">
+
+    <Grid Background="#EEE2DF">
+        <!-- Layout principal -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Titre principal -->
+        <TextBlock Text="Gestion des Produits"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="#6A00F4"
+                   HorizontalAlignment="Center"
+                   Margin="0,20,0,10"/>
+
+        <!-- Barre de recherche de produits -->
+        <Grid Grid.Row="1" HorizontalAlignment="Center" Margin="0,0,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Icone de recherche et champ de texte -->
+            <StackPanel Orientation="Horizontal" Grid.Column="0">
+                <materialDesign:PackIcon Kind="Magnify" Width="24" Height="24" Foreground="Gray" Margin="5,0,10,0"/>
+                <TextBox Width="200" Height="30" x:Name="SearchProductBox" Padding="5" 
+                         VerticalAlignment="Center" HorizontalAlignment="Left" 
+                         Background="White" Foreground="Gray" FontSize="14" />
+            </StackPanel>
+
+            <!-- Bouton de recherche -->
+            <Button Content="Rechercher" Grid.Column="1" Width="100" Height="30" Margin="10,0,0,0"
+                    Background="#6A00F4" Foreground="White" FontWeight="Bold" Click="RechercherProduit_Click"/>
+        </Grid>
+
+        <!-- Liste des produits dans une DataGrid -->
+        <Border Grid.Row="2" Background="White" CornerRadius="10" Padding="10" Margin="20">
+            <ScrollViewer>
+                <DataGrid x:Name="ProductDataGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,0,0,10" RowHeight="40">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding ProductID}" Width="*"/>
+                        <DataGridTextColumn Header="Nom du Produit" Binding="{Binding ProductName}" Width="2*"/>
+                        <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="3*"/>
+                        <DataGridTextColumn Header="Prix" Binding="{Binding Price}" Width="*"/>
+                        <DataGridTextColumn Header="Quantité en Stock" Binding="{Binding StockQuantity}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </ScrollViewer>
+        </Border>
+
+        <!-- Actions de gestion des produits -->
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,20">
+            <Button Width="100" Height="35" Margin="10,0" Background="#00BFA5" Foreground="White" FontWeight="Bold" Click="AjouterProduit_Click">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <materialDesign:PackIcon Kind="Plus" Width="16" Height="16" Foreground="White" Margin="0,0,5,0"/>
+                    <TextBlock Text="Ajouter"/>
+                </StackPanel>
+            </Button>
+
+            <Button Width="100" Height="35" Margin="10,0" Background="#FFA726" Foreground="White" FontWeight="Bold" Click="ModifierProduit_Click">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <materialDesign:PackIcon Kind="Pencil" Width="16" Height="16" Foreground="White" Margin="0,0,5,0"/>
+                    <TextBlock Text="Modifier"/>
+                </StackPanel>
+            </Button>
+
+            <Button Width="100" Height="35" Margin="10,0" Background="#D72638" Foreground="White" FontWeight="Bold" Click="SupprimerProduit_Click">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <materialDesign:PackIcon Kind="Delete" Width="16" Height="16" Foreground="White" Margin="0,0,5,0"/>
+                    <TextBlock Text="Supprimer"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

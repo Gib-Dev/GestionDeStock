@@ -1,0 +1,98 @@
+﻿<Window x:Class="GESTION_DES_STOCKS.Views.Homepage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Gestion des Stocks - Tableau de Bord" Height="650" Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+<Window.Resources>
+        <!-- Style pour les boutons du menu de gauche -->
+        <Style x:Key="MenuButtonStyle" TargetType="Button">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#5A00D4"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <!-- Icône du bouton -->
+                            <materialDesign:PackIcon Kind="{TemplateBinding Tag}" Width="24" Height="24" Margin="5" Foreground="White" />
+                            <!-- Texte du bouton -->
+                            <ContentPresenter VerticalAlignment="Center" Margin="10,0,0,0"/>
+                        </StackPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <!-- Effets visuels pour les états de survol et de clic -->
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#00A8E8"/> <!-- Couleur de survol -->
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Opacity" Value="0.8"/> <!-- Opacité réduite pour effet visuel -->
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#D72638"/> <!-- Couleur de clic -->
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Opacity" Value="0.9"/> <!-- Légère opacité pour l'effet de clic -->
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <!-- Structure de la fenêtre -->
+    <Grid Background="#E0FBFC">
+        <!-- En-tête de la fenêtre -->
+        <Border Background="#5A00D4" Height="80" VerticalAlignment="Top" Padding="10,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <materialDesign:PackIcon Kind="Store" Width="50" Height="50" Foreground="White" Margin="10"/>
+                <TextBlock Text="Gestion des Stocks - Tableau de Bord" 
+                           Foreground="White" FontSize="24" FontWeight="Bold" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Contenu principal de la fenêtre, avec deux colonnes -->
+        <Grid Margin="0,90,0,10">
+            <Grid.ColumnDefinitions>
+                <!-- Colonne pour le menu -->
+                <ColumnDefinition Width="200"/>
+                <!-- Colonne pour le contenu principal -->
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Menu de navigation latérale gauche -->
+            <StackPanel Grid.Column="0" Background="#5A00D4" VerticalAlignment="Stretch" Width="200">
+                <!-- Boutons du menu avec icônes et texte -->
+                <Button Content="Tableau de Bord" Style="{StaticResource MenuButtonStyle}" Tag="ViewDashboard" Click="Dashboard_Click"/>
+                <Button Content="Gestion des Produits" Style="{StaticResource MenuButtonStyle}" Tag="Shopping" Click="Products_Click"/>
+                <Button Content="Catégories" Style="{StaticResource MenuButtonStyle}" Tag="Tag" Click="Categories_Click"/>
+                <Button Content="Stocks" Style="{StaticResource MenuButtonStyle}" Tag="Cube" Click="Stocks_Click"/>
+                <Button Content="Rapports" Style="{StaticResource MenuButtonStyle}" Tag="ChartBar" Click="Reports_Click"/>
+                <Button Content="Paramètres" Style="{StaticResource MenuButtonStyle}" Tag="Cog" Click="Settings_Click"/>
+                <Button Content="Déconnexion" Style="{StaticResource MenuButtonStyle}" Tag="Logout" Click="Logout_Click" Margin="0,50,0,0"/>
+            </StackPanel>
+
+            <!-- Zone de contenu principal -->
+            <Border Grid.Column="1" Background="White" CornerRadius="10" Padding="20" Margin="15">
+                <Border.Effect>
+                    <!-- Effet d'ombre portée pour la carte -->
+                    <DropShadowEffect Color="Black" ShadowDepth="5" Opacity="0.3" BlurRadius="10"/>
+                </Border.Effect>
+                <StackPanel>
+                    <!-- Titre de la page (change en fonction de la navigation) -->
+                    <TextBlock x:Name="PageTitle" Text="Tableau de Bord" FontSize="22" FontWeight="Bold" Foreground="#5A00D4" Margin="0,0,0,20"/>
+                    <!-- Zone de contenu dynamique -->
+                    <ContentControl x:Name="MainContent" />
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

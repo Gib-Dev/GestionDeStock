@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Update="AddProductWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CategoriesControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DashboardControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditCategoryWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditProductWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Homepage.xaml.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProductsControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RapportsControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SettingsControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StocksControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddProductWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CategoriesControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DashboardControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditCategoryWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditProductWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Homepage.xaml.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProductsControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RapportsControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Styles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SettingsControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StocksControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

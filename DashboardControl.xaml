@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="GESTION_DES_STOCKS.DashboardControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:GESTION_DES_STOCKS"
+             Background="{StaticResource BackgroundBrush}">
+
+    <Grid>
+        <!-- Titre principal -->
+        <TextBlock Text="Tableau de Bord" Style="{StaticResource TitleText}" Margin="20,10,20,20" />
+
+        <!-- Contenu des cartes dans un UniformGrid pour une disposition régulière -->
+        <UniformGrid Rows="2" Columns="3" Margin="20,60,20,20">
+            <!-- Section 1: Stocks Totals -->
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <materialDesign:PackIcon Kind="Warehouse" Style="{StaticResource IconStyle}" Width="50" Height="50" Foreground="{StaticResource PrimaryBrush}" />
+                    <TextBlock Text="Stocks Totals" Style="{StaticResource SectionTitle}" />
+                    <TextBlock Text="1245 Articles" Style="{StaticResource SectionSubtitle}" />
+                </StackPanel>
+            </Border>
+
+            <!-- Section 2: Produits -->
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <materialDesign:PackIcon Kind="Shopping" Foreground="{StaticResource AccentBrush}" Width="50" Height="50" />
+                    <TextBlock Text="Produits" Style="{StaticResource SectionTitle}" />
+                    <TextBlock Text="340 Produits" Style="{StaticResource SectionSubtitle}" />
+                </StackPanel>
+            </Border>
+
+            <!-- Section 3: Catégories -->
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <materialDesign:PackIcon Kind="Tag" Foreground="{StaticResource SecondaryBrush}" Width="50" Height="50" />
+                    <TextBlock Text="Catégories" Style="{StaticResource SectionTitle}" />
+                    <TextBlock Text="12 Catégories" Style="{StaticResource SectionSubtitle}" />
+                </StackPanel>
+            </Border>
+
+            <!-- Section 4: Rapports Récents -->
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <materialDesign:PackIcon Kind="ChartBar" Foreground="{StaticResource AccentBrush}" Width="50" Height="50" />
+                    <TextBlock Text="Rapports Récents" Style="{StaticResource SectionTitle}" />
+                    <TextBlock Text="3 Nouveaux" Style="{StaticResource SectionSubtitle}" />
+                </StackPanel>
+            </Border>
+
+            <!-- Section 5: Notifications -->
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <materialDesign:PackIcon Kind="Bell" Foreground="{StaticResource PrimaryBrush}" Width="50" Height="50" />
+                    <TextBlock Text="Notifications" Style="{StaticResource SectionTitle}" />
+                    <TextBlock Text="5 Non lues" Style="{StaticResource SectionSubtitle}" />
+                </StackPanel>
+            </Border>
+
+            <!-- Section 6: Paramètres -->
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <materialDesign:PackIcon Kind="Cog" Foreground="{StaticResource PrimaryBrush}" Width="50" Height="50" />
+                    <TextBlock Text="Paramètres" Style="{StaticResource SectionTitle}" />
+                    <TextBlock Text="Configurations" Style="{StaticResource SectionSubtitle}" />
+                </StackPanel>
+            </Border>
+        </UniformGrid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,20 @@
+﻿GESTION-DES-STOCKS
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\DevAppBureau\GESTION-DES-STOCKS 1\GESTION-DES-STOCKS\GESTION-DES-STOCKS\obj\Debug\net8.0-windows\
+GESTION_DES_STOCKS
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+D:\DevAppBureau\GESTION-DES-STOCKS 1\GESTION-DES-STOCKS\GESTION-DES-STOCKS\App.xaml
+171046330746
+
+641396770979
+221-1403501998
+AddProductWindow.xaml;CategoriesControl.xaml;DashboardControl.xaml;EditCategoryWindow.xaml;EditProductWindow.xaml;GESTION-DES-STOCKS\App.xaml;GESTION-DES-STOCKS\Homepage.xaml.xaml;GESTION-DES-STOCKS\MainWindow.xaml;GESTION-DES-STOCKS\ProductsControl.xaml;Homepage.xaml.xaml;MainWindow.xaml;ProductsControl.xaml;RapportsControl.xaml;Resources\Styles.xaml;SettingsControl.xaml;StocksControl.xaml;UserControls.xaml;
+
+True
+
